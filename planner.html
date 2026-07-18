@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Esther Sugh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">ES<strong>·</strong>Esther Sugh</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Stay on top of coursework</span>
+    <h1>Academic Planner</h1>
+    <p style="max-width:56ch;color:rgba(247,245,239,0.75)">Add assignments, tag their priority, mark them done, and clear out what's finished — all saved for this session.</p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="container">
+
+      <div class="planner-shell">
+        <form class="planner-toolbar" id="taskForm">
+          <input type="text" id="taskInput" placeholder="e.g. Submit COS106 term project" aria-label="Task description" required>
+          <input type="date" id="taskDate" aria-label="Due date">
+          <select id="taskPriority" aria-label="Priority level">
+            <option value="low">Low priority</option>
+            <option value="medium" selected>Medium priority</option>
+            <option value="high">High priority</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <div class="planner-stats">
+          <div class="stat-block"><span class="stat-num" id="statTotal">0</span><span class="stat-label">Total</span></div>
+          <div class="stat-block"><span class="stat-num" id="statPending">0</span><span class="stat-label">Pending</span></div>
+          <div class="stat-block"><span class="stat-num" id="statDone">0</span><span class="stat-label">Completed</span></div>
+        </div>
+
+        <div class="planner-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pending">Pending</button>
+          <button class="filter-btn" data-filter="done">Completed</button>
+          <button class="filter-btn" data-filter="clear" style="margin-left:auto;color:#b6462f;">Clear Completed</button>
+        </div>
+
+        <ul id="task-list"></ul>
+      </div>
+
+      <p class="muted text-center mt-lg" style="font-family:var(--font-mono);font-size:0.8rem;">Tasks are stored in memory for this browsing session — refreshing loads the starter list below again.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>&copy; 2025 Esther Sugh. Built for COS 106 — Introduction to Web Technologies.</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>

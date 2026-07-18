@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Esther Sugh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">ES<strong>·</strong>Esther Sugh</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Learning by building</span>
+    <h1>Projects</h1>
+    <p style="max-width:56ch;color:rgba(247,245,239,0.75)">Three early builds from my first year — small in scope, but each one taught me something I couldn't have learned from a textbook alone.</p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="grid-3">
+
+        <article class="card project-card">
+          <div class="project-media"><img src="assets/project-calculator.svg" alt="Screenshot mockup of the arithmetic calculator project interface"></div>
+          <div class="project-body">
+            <h3>Arithmetic Calculator</h3>
+            <p class="muted">A browser-based calculator that handles addition, subtraction, multiplication and division with a clean, keypad-style interface built entirely with HTML, CSS and vanilla JavaScript.</p>
+            <div>
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media"><img src="assets/project-todo.svg" alt="Screenshot mockup of the to-do list application"></div>
+          <div class="project-body">
+            <h3>Interactive To-Do List</h3>
+            <p class="muted">A task list app supporting adding, completing and deleting items with data kept in the browser session — the direct predecessor to the Academic Planner on this site.</p>
+            <div>
+              <span class="tag">JavaScript</span><span class="tag">DOM</span><span class="tag">CSS Flexbox</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media"><img src="assets/project-blog.svg" alt="Screenshot mockup of the personal blog website"></div>
+          <div class="project-body">
+            <h3>Personal Blog Layout</h3>
+            <p class="muted">A responsive blog homepage exploring semantic HTML, CSS Grid, and typography — my first attempt at a layout that reads well on any screen size.</p>
+            <div>
+              <span class="tag">HTML5</span><span class="tag">CSS Grid</span><span class="tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-band">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Project Log</span>
+        <h2 style="color:var(--paper)">At a glance</h2>
+      </div>
+      <table class="data-table">
+        <caption>Summary of tools used and current status across all three projects</caption>
+        <thead>
+          <tr><th>Project</th><th>Core Stack</th><th>Status</th><th>Started</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Arithmetic Calculator</td><td>HTML, CSS, JavaScript</td><td>Complete</td><td>Semester 1</td></tr>
+          <tr><td>Interactive To-Do List</td><td>JavaScript, DOM</td><td>Complete</td><td>Semester 1</td></tr>
+          <tr><td>Personal Blog Layout</td><td>HTML5, CSS Grid</td><td>Complete</td><td>Semester 1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Watch</span>
+        <h2>How I approach a new build</h2>
+        <p class="muted">A short walkthrough on the kind of planning and coding process I follow before writing my first line of HTML.</p>
+      </div>
+      <div class="media-frame">
+        <iframe src="https://www.youtube.com/embed/ysEN5RaKOlA" title="Web development process walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>&copy; 2025 Esther Sugh. Built for COS 106 — Introduction to Web Technologies.</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

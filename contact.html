@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Esther Sugh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">ES<strong>·</strong>Esther Sugh</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Let's connect</span>
+    <h1>Contact Me</h1>
+    <p style="max-width:56ch;color:rgba(247,245,239,0.75)">Have a question, opportunity, or just want to say hello? Send me a message below.</p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="container contact-grid">
+
+      <div class="contact-info-card">
+        <h3>Reach me directly</h3>
+        <div class="contact-row">
+          <span class="ico">✉</span>
+          <div><small>Email</small>kahndie01@gmail.com</div>
+        </div>
+        <div class="contact-row">
+          <span class="ico">☎</span>
+          <div><small>Phone</small>0906 560 4933</div>
+        </div>
+        <div class="contact-row">
+          <span class="ico">🎓</span>
+          <div><small>University</small>MIVA University — Level 100</div>
+        </div>
+        <div class="contact-row">
+          <span class="ico">📍</span>
+          <div><small>Based in</small>Nigeria</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="form-status" id="formStatus">Thank you, Esther will get back to you shortly!</div>
+        <form id="contactForm" novalidate>
+          <div class="form-group" id="group-name">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+            <span class="error-msg">Please enter your name.</span>
+          </div>
+
+          <div class="form-group" id="group-email">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <span class="error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group" id="group-phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Digits only, e.g. 09065604933">
+            <span class="error-msg">Phone number must contain digits only.</span>
+          </div>
+
+          <div class="form-group" id="group-message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+            <span class="error-msg">Please enter a message.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>&copy; 2025 Esther Sugh. Built for COS 106 — Introduction to Web Technologies.</span>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
