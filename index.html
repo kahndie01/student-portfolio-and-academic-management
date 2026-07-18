@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Esther Sugh — Computer Science Student Portfolio</title>
-<meta name="description" content="Official academic portfolio of Esther Sugh, 100 Level Computer Science student at MIVA University.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<title>Esther Sugh — Academic Portfolio</title>
+<meta name="description" content="Academic portfolio and student management site for Esther Sugh, Computer Science graduate and Executive Assistant.">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-header">
-  <nav class="navbar">
-    <a href="index.html" class="brand">ES<strong>·</strong>Esther Sugh</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">Esther Sugh <span>/ B.Sc CS</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="planner.html">Academic Planner</a></li>
@@ -25,98 +26,82 @@
   </nav>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
-    <div class="container hero-grid">
+    <div class="wrap hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Welcome to my portfolio</span>
-        <h1>Hi, I'm Esther Sugh.<br>I'm building my future in Computer Science.</h1>
-        <p class="lead">100 Level Computer Science student at MIVA University, Tiv by language, and passionate about turning logic into things people can actually use. This site is where I track my growth — from coursework to code.</p>
+        <p class="eyebrow">Student Portfolio &amp; Academic Management</p>
+        <h1>Esther Sugh</h1>
+        <p class="lede">Welcome — I'm a Computer Science graduate turned Executive Assistant, currently building this site to track my academic work and showcase what I make. I work across English, Hausa, Yoruba, and basic Italian, and I like turning organised plans into things people can actually use.</p>
         <div class="hero-actions">
-          <a href="about.html" class="btn btn-primary">Read My Story</a>
-          <a href="projects.html" class="btn btn-outline">View My Projects</a>
+          <a class="btn btn-primary" href="projects.html">View my projects</a>
+          <a class="btn btn-ghost" href="planner.html">Open academic planner</a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="id-card">
-          <div class="id-card-top">
-            <span>MIVA University</span>
-            <span>ID · 2025/CS</span>
-          </div>
+      <div class="id-card">
+        <div class="id-card-top">
           <div class="id-photo">
-            <img src="assets/esther-photo.jpg" alt="Portrait photograph of Esther Sugh">
+            <img src="images/avatar.svg" alt="Illustrated portrait of Esther Sugh">
           </div>
-          <p class="id-name">Esther Sugh</p>
-          <p class="id-role">B.Sc. Computer Science — Level 100</p>
-          <div class="id-meta">
-            <div><b>Language</b>Tiv</div>
-            <div><b>Status</b>Active Student</div>
-            <div><b>Focus</b>Software &amp; Web Dev</div>
-            <div><b>Aspiration</b>Computer Scientist</div>
+          <div>
+            <p class="id-name">Esther Sugh</p>
+            <p class="id-role">B.Sc. Computer Science · 2021</p>
           </div>
+        </div>
+        <div class="id-meta">
+          <div><b>Abuja, NG</b>Based in</div>
+          <div><b>Executive Secretary</b>Current role</div>
+          <div><b>EN · HA · YO · IT</b>Languages</div>
+          <div><b>Design · Web · AI data</b>Focus areas</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Brief Biography</span>
-        <h2>A little about me</h2>
+  <section class="section reveal-on-scroll">
+    <div class="wrap bio-layout">
+      <div class="prose">
+        <p class="eyebrow">Brief biography</p>
+        <h2>A little about how I got here</h2>
+        <p>I studied Computer Science at Oduduwa University, graduating in 2021, and since then I've worked as a Personal Assistant, Social Media Strategist, and now Executive Secretary. Alongside that day-to-day work, I'm building two ventures of my own: an animated digital invitation studio for Nigerian celebrations, and freelance work in executive support and AI data annotation.</p>
+        <p>This site brings both sides together — a portfolio of what I've built, and a planner I actually use to keep my academic and personal projects on track. Have a look around, and feel free to send a message from the <a href="contact.html">contact page</a>.</p>
       </div>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Who I am</h3>
-          <p>I am Tiv by language, a girl proud of where I come from, and currently a first-year (100 Level) student at MIVA University pursuing a degree in Computer Science. I believe technology is one of the most powerful tools we have to solve everyday problems, and I'm at the very start of learning how to wield it well.</p>
-        </div>
-        <div class="card">
-          <h3>What drives me</h3>
-          <p>Every line of code I write is a small step toward my goal of becoming a computer scientist. I'm curious about how software is designed, how the web works, and how thoughtful design can make technology easier for everyone to use — including the interactive academic planner you'll find on this site.</p>
-        </div>
-      </div>
+      <aside>
+        <h3>Quick facts</h3>
+        <ul>
+          <li>Oduduwa University, B.Sc. Computer Science (2021)</li>
+          <li>Fluent in English, Hausa &amp; Yoruba; basic Italian</li>
+          <li>Currently exploring Outlier, Contra &amp; Upwork for remote work</li>
+          <li>Building a Nigerian mocktail &amp; cocktail brand on the side</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <section class="dark-band">
-    <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Find your way around</span>
-        <h2>Explore this portfolio</h2>
-        <p>Every page here reflects a different part of my academic journey so far.</p>
-      </div>
-      <div class="grid-3">
-        <div class="card">
-          <span class="tag teal">01 — Profile</span>
-          <h3>About Me</h3>
-          <p class="muted">My education, career goals, technical skills, and the hobbies that keep me grounded.</p>
-          <a href="about.html" class="btn btn-dark btn-sm">Visit page →</a>
-        </div>
-        <div class="card">
-          <span class="tag teal">02 — Work</span>
-          <h3>Projects</h3>
-          <p class="muted">A look at early builds — from a calculator to a to-do list — that show how I learn by making.</p>
-          <a href="projects.html" class="btn btn-dark btn-sm">Visit page →</a>
-        </div>
-        <div class="card">
-          <span class="tag teal">03 — Tool</span>
-          <h3>Academic Planner</h3>
-          <p class="muted">A working task manager I built to organise my own coursework, deadlines, and revision.</p>
-          <a href="planner.html" class="btn btn-dark btn-sm">Visit page →</a>
-        </div>
-      </div>
+  <section class="section section-alt reveal-on-scroll">
+    <div class="wrap">
+      <p class="eyebrow">Hear it from me</p>
+      <h2>A short welcome</h2>
+      <p>A quick video introduction — recorded as part of this portfolio to demonstrate embedded multimedia.</p>
+      <figure class="media-frame">
+        <video controls preload="none" poster="images/project-planner.svg">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support embedded video. You can also read my introduction on the <a href="about.html">About Me</a> page.
+        </video>
+      </figure>
+      <figcaption>Sample welcome video (placeholder clip) — swap the &lt;source&gt; in index.html for your own recording before submitting.</figcaption>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <span>&copy; 2025 Esther Sugh. Built for COS 106 — Introduction to Web Technologies.</span>
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
+  <div class="wrap footer-grid">
+    <p>&copy; <span id="year"></span> Esther Sugh. Built for COS 106 — Introduction to Web Technologies.</p>
+    <div class="social-row">
       <a href="contact.html">Contact</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
